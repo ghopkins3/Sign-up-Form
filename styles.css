@@ -4,9 +4,12 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",sans-serif;
 }
 
+body {
+    overflow: hidden;
+}
+
 #container {
     display: flex;
-    border: 2px solid black;
     flex-direction: row;
     height: 100vh;
 }
@@ -24,22 +27,35 @@
 .card-body {
     display: flex;
     position: absolute;
-    width: 44.5vw;
+    width: 45vw;
     background: black;
     opacity: 0.6;
     color: white;
-    top: 16rem;
+    top: 12.5rem;
     text-align: center;
-    font-size: 8rem;
+    font-size: 6rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     gap: 1rem;
 }
 
 #compass {
-    padding-top: 1.5rem;
-    height: 6.3rem;
-    padding-left: 4.5rem;
+    padding-top: 2rem;
+    height: 5rem;
+    padding-left: 10.5rem;
+}
+
+.photo-credit {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1rem;
+    width: 44.3vw;
+    text-align: center;
+    color: white;
+}
+
+.photo-credit > a {
+    color: white;
 }
 
 #right-container {
@@ -50,7 +66,7 @@
 }
 
 #top {
-    margin-top: 10rem;
+    margin-top: 4rem;
     margin-left: 4rem;
     margin-right: 13rem;
     font-size: 1.7rem;
@@ -64,16 +80,16 @@
 #sign-up {
     display: flex;
     flex-direction: column;
-    height: 35%;
+    height: 40%;
     margin-top: 4rem;
-    box-shadow: 0 2px 5px -2px gray;
+    box-shadow: 0 3px 5px -2px gray;
     background-color: white;
 }
 
 #sign-up > p {
     font-size: 2rem;
     padding-left: 4rem;
-    padding-top: 2rem;
+    padding-top: 1.1rem;
     font-weight: 600;
 }
 
@@ -82,10 +98,9 @@
     flex-direction: column;
     padding-left: 4rem;
     padding-top: 1.5rem;
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     font-weight: 600;
     letter-spacing: 0.06rem;
-
 }
 
 #names-text {
@@ -96,8 +111,8 @@
 
 #names-forms {
     display: flex;
-    gap: 7.8rem;
-    height: 1.5rem;
+    gap: 3.85rem;
+    height: 1.8rem;
 }
 
 #contacts-text {
@@ -109,8 +124,8 @@
 
 #contacts-forms {
     display: flex;
-    gap: 7.85rem;
-    height: 1.5rem;
+    gap: 3.85rem;
+    height: 1.8rem;
 }
 
 #password-text {
@@ -122,8 +137,60 @@
 
 #password-forms {
     display: flex;
-    gap: 7.85rem;
-    margin-bottom: 1.5rem;
-    height: 1.5rem;
-    width: 4rem;
+    gap: 3.85rem;
+    height: 1.8rem;
+}
+
+input[type] {
+    width: 18rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-left: 0.4rem;
+    border-radius: 5px;
+    border: 1px solid rgb(175, 175, 206);
+    outline: none;
+}
+
+input[type]:focus {
+    box-shadow: 5px 1px 5px 1px #ccc;
+    outline: 1px solid blue;
+}
+
+input[type]:invalid {
+    outline: 2px solid red;
+}
+
+#password-match {
+    font-size: 0.75rem;
+    color: red;
+    padding-left: 0.2rem;
+}
+
+button {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-top: 2.5rem;
+    margin-left: 3.8rem;
+    height: 3.2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    background-color: #423f2e;
+    border-radius: 0.5rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#bottom > p {
+    margin-top: 1.5rem;
+    margin-left: 4rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+#log-in {
+    color: #423f2e;
+    text-decoration: none;
 }

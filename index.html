@@ -13,11 +13,13 @@
                     <img src="images/compass.png" id="compass" alt="compass logo">
                     <p class="card-text">EXPLORE</p>
                 </div>
+
+                <div class="photo-credit">Photo by <a href="https://unsplash.com/@pbanselme">Bailey Anselme</a> on <a href="https://unsplash.com/">Unsplash</a></div>
             </div>
             <div id="right-container">
                 <div id="top">
-                  <p>This is not a real online service! You know you need something like this in your life
-                    to help you realize your deepest dreams. 
+                  <p>Embark on the adventure of a lifetime by signing up to explore the breathtaking beauty of nature's most stunning landscapes. 
+                    Discover nature's wonders and start your journey today—let the great outdoors be your playground! 
                   </p> 
                   <p>Sign up <em>now</em> to get started.</p>
                   <p>You <em>know</em> you want to.</p>
@@ -30,31 +32,35 @@
                             <p>LAST NAME</p>
                         </div>
                         <div id="names-forms">
-                            <input type="text" id="fname" name="fname"><br>
-                            <input type="text" id="lname" name="lname"><br>
+                            <input type="text" id="fname" name="fname" placeholder="First Name"><br>
+                            <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
                         </div>
                         <div id="contacts-text">
                             <p>EMAIL</p>
                             <p>PHONE NUMBER</p>
                         </div>
                         <div id="contacts-forms">
-                            <input type="text" id="fname" name="fname"><br>
-                            <input type="text" id="lname" name="lname"><br>
+                            <input type="email" id="email" name="email" placeholder="Your Email"><br>
+                            <input type="text" id="phone" name="phone" placeholder="123-456-7890" maxlength="12"><br>
                         </div>
                         <div id="password-text">
                             <p>PASSWORD</p>
                             <p>CONFIRM PASSWORD</p>
                         </div>
                         <div id="password-forms">
-                            <input type="text" id="fname" name="fname"><br>
-                            <input type="text" id="lname" name="lname"><br>
+                            <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,24}" maxlength="24"><br>
+                            <input type="password" id="confirm" name="confirm" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,24}" maxlength="24"><br>
                         </div>
+                        <p id="password-match"></p>
                     </form>
                 </div>
                 <div id="bottom">
-
+                    <button type="button" id="create-button">Create Account</button>
+                    <p>Already have an account? <a id="log-in" href="#">Log in</a></p>
                 </div>
             </div>
         </div>
     </body>
+
+    <script src="sign-up.js"></script>
 </html>
