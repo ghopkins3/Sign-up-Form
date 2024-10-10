@@ -111,20 +111,20 @@ body {
 
 #names-forms {
     display: flex;
-    gap: 3.85rem;
+    gap: 3.75rem;
     height: 1.8rem;
 }
 
 #contacts-text {
     display: flex;
-    gap: 22.7rem;
+    gap: 23rem;
     margin-top: 2rem;
     margin-bottom: 0.25rem;
 }
 
 #contacts-forms {
     display: flex;
-    gap: 3.85rem;
+    gap: 3.75rem;
     height: 1.8rem;
 }
 
@@ -137,7 +137,7 @@ body {
 
 #password-forms {
     display: flex;
-    gap: 3.85rem;
+    gap: 3.75rem;
     height: 1.8rem;
 }
 
